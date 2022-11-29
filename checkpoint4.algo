@@ -1,0 +1,41 @@
+algorithm taille de tableau
+
+FUNCTION saiaise(n) : INTEGER
+VAR
+    n : integer
+BEGIN
+   read(n)
+    RETURN n ;
+END
+PROCEDURE remplir(tab,n)
+VAR
+    set_declarations
+BEGIN
+   FOR i FROM 1 TO n-1 STEP 1  DO
+   read(tab[i])
+   END_FOR
+END
+
+FUNCTION tri(array ) : return_type
+VAR
+    set_declarations
+BEGIN
+
+  FOR i FROM 1 TO n STEP 1  DO
+   key = array[i];
+     j = i - 1;
+     WHILE (key < array[j] && j >= 0) DO
+      array[j + 1] = array[j];
+      --j;
+     END_WHILE
+     array[j + 1] = key;
+END_FOR
+
+ALGORITHM algorithm_name
+VAR
+    set_declarations
+BEGIN
+    n=saisie(n)
+    remplir(t,n)
+    tri(t,n)
+END
